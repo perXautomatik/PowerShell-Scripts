@@ -6,3 +6,7 @@ cd \
 ls
 .\split.cs
 powershell.exe -NoLogo -NoProfile -Command 'Install-Module -Name PackageManagement -Force -MinimumVersion 1.4.6 -Scope CurrentUser -AllowClobber'
+d:\Documents\WindowsPowerShell\Scripts\actOnJson.ps1
+d:\Documents\WindowsPowerShell\Scripts\PieChartOftop10Memusage.ps1
+d:\Documents\WindowsPowerShell\Scripts\actOnJson.ps1
+d:\Documents\WindowsPowerShell\Scripts\initilazeNignoreSubfoldersNatpath.ps1

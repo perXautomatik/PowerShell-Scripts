@@ -282,3 +282,287 @@ git branch --set-upstream-to=new
 git push PDF-Bookmark-Split
 git push --set-upstream PDF-Bookmark-Split master
 git pull PDF-Bookmark-Split master new
+git help
+git status
+git restore --staged
+git restore --staged scripts
+git restore --staged Scripts
+git status
+git remote add "D:\Documents\WindowsPowerShell"
+git remote add PowerShellCmdHist "D:\Documents\WindowsPowerShell"
+git fetch PowerShellCmdHist beforePurge:beforePurge
+git diff beforePurge
+git fetch PowerShellCmdHist refs/heads/bucketsNpiechart
+get-content .\gitConfigsToAddAsSubmodules.txt
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ $_.parent }
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ $_.parent } | console-out
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ $_.parent } | $
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ $_.parent } | $_
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ $_ | Split-Path -Path $MyInvocation.MyCommand.Definition -Parent}
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ Split-Path -Path $_ -Parent}
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ Split-Path -Path $_ -Parent} | %{ Split-Path -Path $_ -Parent}
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ Split-Path -Path $_ -Parent} | %{ Split-Path -Path $_ -Parent} | unique
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ Split-Path -Path $_ -Parent} | %{ Split-Path -Path $_ -Parent} | unique | git submodule add
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ Split-Path -Path $_ -Parent} | %{ Split-Path -Path $_ -Parent} | unique | %{ git submodule add $_ }
+get-content .\gitConfigsToAddAsSubmodules.txt | %{ Split-Path -Path $_ -Parent} | %{ Split-Path -Path $_ -Parent} | unique | %{ git submodule add $_ -f }
+& "C:\Users\crbk01\Desktop\OnGithub\addSubmodules.ps1"
+git
+git -bare
+git --bare
+git init
+ls
+ls | %{ $_ | git init }
+ls | %{ cd $_ | git init }
+ls | %{ git $_ init }
+ls | %{ git init $_ }
+ls | filter -name 'PortableApps.com' | %{ git init $_ }
+ls | Where-Object { $_.Name -notin 'PortableApps.com' }  | %{ git init $_ }
+git
+Remove-Item -Path .\Code\ -Force -Recurse
+kill vscode
+Stop-Process -Name vscode
+Remove-Item -Path .\Code\ -Force -Recurse
+Stop-Process -Name code
+Remove-Item -Path .\Code\ -Force -Recurse
+Stop-Process -Name code
+Remove-Item -Path .\Code\ -Force -Recurse
+takeown /F "C:\windows.old" /A /R /D Y
+toutch newfile
+touch newfile
+'touch' > newfile
+git init
+remot add origin https://gist.github.com/2a77d2bb2d57576de925d1d3ac8de62a
+remote add origin https://gist.github.com/2a77d2bb2d57576de925d1d3ac8de62a
+git remote add origin https://gist.github.com/2a77d2bb2d57576de925d1d3ac8de62a
+git fetch
+git branch master origin/master
+git checkout master
+git add -A
+git commit -m 'first commit'
+git push
+ls
+.\fx-win.exe
+echo '{"key": "value"}' | .\fx-win.exe 'x => x.key'
+. .\fx-win.exe
+echo '{"key": "value"}' | fx 'x => x.key'
+cd 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile'
+ping google.com
+ping www.google.com
+echo '{"key": "value"}' | fx 'x => x.key'
+echo '{"key": "value"}' | .\fx-win.exe 'x => x.key'
+ping google.com
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | fx
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe
+. .\fx-win.exe
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this[1]'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.name'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children'
+clear
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.name'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this.0'?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0'?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0' 'this[1]' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0' 'this[1]' 
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0'  
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children'
+clear
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children'?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe
+.\fx-win.exe
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map'?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0' 'this.map'?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0' 
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children'  
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]'  
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]' '[1]' 
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this[1]'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this[0]'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this.[0]'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this.map[0]'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this.map(0)'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map(0)'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this' 'this' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar'  ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar'  'this.type'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this.type' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map()' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children.map' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.map(children)' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children.this' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.name' 
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.name'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children'
+clear
+.\fx-win.exe
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' 'this.map(x => x.name)'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.name)'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.name, x.url)'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.name x.url)'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.name x => x.url)'
+.\fx-win.exe 
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.url)'
+.\fx-win.exe 
+echo '[1,2,3]' | .\fx-win.exe ?
+echo '[1,2,3]' | .\fx-win.exe '{...this, }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this, }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name,...this.url }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name,...this.url}'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name,this.url}'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name, this.url}'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name, this}'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this, this}'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this, this.name}'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name, }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{... }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{..., }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this, }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.x, }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe ?
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{this.map(x => x.name), }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{map(x => x.name), }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ x.name), }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ name), }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ name, }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ this.name, }'
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ this, }'
+git add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git add http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git remote add origin http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git remote -v
+git remote add origin http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git init
+git add http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git --work-tree=/ add http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git --work-tree=/ add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git clone --bare 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git archive --remote=http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git archive --add-file=http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git clone 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' livewindows.ahk
+git submodule add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' livewindows.ahk
+git submodule add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git fetch --all 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add origin 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git fetch --all 
+git clone 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' livewindows.ahk
+git archive --add-file=http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git clone --bare 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -v
+git fetch -all
+git fetch --all
+git fetch
+git fetch --all --force
+git config --local --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+git fetch --all --force
+git pull
+git clone ...(remote) new_folder
+git clone ...(local_remote) new_folder
+git remote -v
+git clone ...(orgin) new_folder
+git clone ...(origin) new_folder
+git clone origin new_folder
+git clone ...(origin) new_folder
+git remote -v
+git clone remote
+git clone origin
+git reset --mixed
+git fsck --full
+git gc --auto
+git prune --expire now
+git reflog --all
+git clone origin
+git config --local --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+git clone origin
+git pull
+git fetch --all --force
+git clone --bare 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add q 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -v
+git remote -f q 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -m -mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote --mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --mirror=fetch 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --m --mirror=fetch 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --master --mirror=fetch 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --master --mirror=fetch 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' ahk
+git remote add --master --mirror=fetch ahk 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -v
+git fetch --all --force
+git pull
+git pull ahk
+git fetch ahk --force
+git fetch --depth=1
+git config  transfer.hideRefs refs/secret
+git fetch --depth=1
+git fetch ahk --force
+git pull ahk
+git config transfer.hideRefs '!refs/secret/not-so-secret'
+git pull ahk
+git fetch ahk --force
+git config  uploadpack.allowAnySHA1InWant
+git fetch ahk --force
+git pull ahk
+git pull --rebase 
+git pull
+git reset --mixed
+git pull --rebase 
+git gc --auto
+git ls-remote 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --master --mirror=fetch livewindows 'http://www.holomind.de/ahk/livewindows'
+git add livewindows.ahk
+git pull --rebase 
+git pull livewindows
+git clone livewindows
+git clone -force livewindows
+git clone --bare livewindows
+git clone --sparse livewindows
+git clone --dissociate livewindows
+git update-index --assume-unchanged 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git fetch
+git clone
+git pull livewindows
+git pull 
+git clone  --depth 1  --filter=blob:none   --sparse  'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git clone  --depth 1  --filter=blob:none   --sparse  'http://www.holomind.de/ahk/livewindows/livewindows.ahk' ahk
+git clone  --depth 1  --filter=blob:none   --sparse  'http://www.holomind.de/ahk/livewindows/' ahk
+git config --global core.compression 0
+git clone  --depth 1  --filter=blob:none   --sparse  'http://www.holomind.de/ahk/livewindows/' ahk
+git checkout ahk
+git checkout  'http://www.holomind.de/ahk/livewindows/' ahk
+git checkout 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git show 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' > ahk
+git archive --remote='http://www.holomind.de/ahk/livewindows/livewindows.ahk' > ahk
+git clone --no-checkout --depth=1 --no-tags 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git restore --staged
+git checkout
+wget 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+wget 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' > livewindows.ahk
+remote add livewindows 'C:\Users\crbk01\Desktop\Ny mapp'
+git remote add livewindows 'C:\Users\crbk01\Desktop\Ny mapp'
+git remote add pipe-objects-into-arrays 'C:\Users\crbk01\Desktop\Ny mapp'
