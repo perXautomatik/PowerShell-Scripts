@@ -286,9 +286,22 @@ git help
 git status
 git restore --staged
 git restore --staged scripts
+(Get-PSReadlineOption).HistorySavePath                                                                                                                       
+Get-PSReadLineKeyHandler                                                                                                                                     
+Get-PSReadLineOption                                                                                                                                         
+New-Item -Path "C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell\PSReadline" -ItemType SymbolicLink -Value "C:\Users\crbk01\AppData\Roaming\Mic...
+New-Item -Path "C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell\PSReadline" -ItemType Hardlink -Value "C:\Users\crbk01\AppData\Roaming\Microso...
+New-Item -Path "C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell\PSReadline" -ItemType Junction -Value "C:\Users\crbk01\AppData\Roaming\Microso...
+(Get-PSReadlineOption).HistorySavePath                                                                                                                       
+set-PSReadlineOption -HistorySavePath "C:\Users\crbk01\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"                      
+Set-PSReadLineOption -HistorySavePath C:\Users\crbk01\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt -HistorySaveStyle in...
+Set-PSReadLineOption -HistorySavePath C:\Users\crbk01\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt -HistorySaveStyle sa...
+(Get-PSReadlineOption).HistorySavePath                                                                                                                       
 git restore --staged Scripts
+Get-PSReadLineOption                                                                                                                                         
 git status
 git remote add "D:\Documents\WindowsPowerShell"
+ [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState                                                                                                    
 git remote add PowerShellCmdHist "D:\Documents\WindowsPowerShell"
 git fetch PowerShellCmdHist beforePurge:beforePurge
 git diff beforePurge
@@ -335,12 +348,14 @@ remot add origin https://gist.github.com/2a77d2bb2d57576de925d1d3ac8de62a
 remote add origin https://gist.github.com/2a77d2bb2d57576de925d1d3ac8de62a
 git remote add origin https://gist.github.com/2a77d2bb2d57576de925d1d3ac8de62a
 git fetch
+cd "C:\Program Files\TortoiseGit\bin"                                                                                                                        
 git branch master origin/master
 git checkout master
 git add -A
 git commit -m 'first commit'
 git push
 ls
+.\TortoiseGitProc.exe                                                                                                                                        
 .\fx-win.exe
 echo '{"key": "value"}' | .\fx-win.exe 'x => x.key'
 . .\fx-win.exe
@@ -358,6 +373,8 @@ cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe ?
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots'
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this[1]'
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe"                                                                                                      
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe" /command:repostatus                                                                                  
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' ?
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar'
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' ?
@@ -380,9 +397,14 @@ clear
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children'?
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe
 .\fx-win.exe
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe" /command:repostatus /path:"C:\Users\crbk01\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine"  
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map'?
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0' 'this.map'?
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe" /command:repostatus /path:"C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell"              
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' '0' 
+cd "C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell"                                                                                             
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe"                                                                                                      
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe" /path                                                                                                
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children'  
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]'  
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[1]' '[1]' 
@@ -409,6 +431,13 @@ cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children' ?
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children.this' ?
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' ?
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe -command repostatus -path C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell"                
+Import-Module ecoargs                                                                                                                                        
+Import-Module echoargs                                                                                                                                       
+Import-Module pscx                                                                                                                                           
+Install-Module -Name Pscx                                                                                                                                    
+echoargs &"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe -command repostatus -path C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell"       
+echoargs                                                                                                                                                     
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children' ?
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.name' 
 cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | .\fx-win.exe 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' ?
@@ -486,6 +515,9 @@ git clone ...(origin) new_folder
 git clone origin new_folder
 git clone ...(origin) new_folder
 git remote -v
+Import-Module pscx                                                                                                                                           
+Import-Module -name pscx                                                                                                                                     
+$history = [System.Collections.ArrayList]([System.IO.File]::ReadAllLines((Get-PSReadlineOption).HistorySavePath))...                                         
 git clone remote
 git clone origin
 git reset --mixed
@@ -501,6 +533,7 @@ git fetch --all --force
 git clone --bare 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
 git remote add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
 git remote add q 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+get-history                                                                                                                                                  
 git remote -v
 git remote -f q 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
 git remote -mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
@@ -530,6 +563,7 @@ git fetch ahk --force
 git pull ahk
 git pull --rebase 
 git pull
+get-history -Verbose                                                                                                                                         
 git reset --mixed
 git pull --rebase 
 git gc --auto
@@ -540,6 +574,8 @@ git pull --rebase
 git pull livewindows
 git clone livewindows
 git clone -force livewindows
+get-history | select -commandline                                                                                                                            
+get-history | select commandline                                                                                                                             
 git clone --bare livewindows
 git clone --sparse livewindows
 git clone --dissociate livewindows
