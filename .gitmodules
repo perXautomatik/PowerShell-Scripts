@@ -37,3 +37,6 @@ path = WindowsDebloat/reclaimWindows
 [submodule "my-windows"]
 	path = my-windows
 	url = https://github.com/perXautomatik/my-windows
+[submodule "ScoopBucket"]
+	path = ScoopBucket
+	url = https://github.com/perXautomatik/ScoopBucket
