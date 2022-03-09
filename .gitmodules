@@ -34,3 +34,6 @@ path = WindowsDebloat/OptimizationScript
 path = WindowsDebloat/reclaimWindows
  url = https://gist.github.com/alirobe/7f3b34ad89a159e6daa1
 
+[submodule "my-windows"]
+	path = my-windows
+	url = https://github.com/perXautomatik/my-windows
