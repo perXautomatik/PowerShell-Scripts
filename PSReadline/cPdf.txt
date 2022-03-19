@@ -1,0 +1,19 @@
+pdftk.exe
+pdftk.exe
+get-help pdftk.exe
+pdftk
+/pdftk.exe
+[accelerators]::get
+[accelerators]
+[psobject].Assembly.GetType(“System.Management.Automation.TypeAccelerators”)::get
+./nuget
+Start-Process -FilePath java -ArgumentList '-jar pdfa-x.y.z.jar'
+Start-Process -FilePath java -ArgumentList '-jar pdfa-x.y.z.jar -help'
+Start-Process -FilePath java -ArgumentList '-jar pdfa-x.y.z.jar -h'
+./cpdf.exe -pages "C:\Users\crbk01\Desktop\Södra\MHN-2018-1680_322.pdf"
+./cpdf.exe -pages 'C:\Users\crbk01\Desktop\ny mapp\Södra\MHN-2018-1680_322.pdf'
+.\pdfcombine "H:\hämtade filer\MHN-2018-826_2_004.pdf" "H:\hämtade filer\SeC_Man-Admin_ds_EN_USA_120109 (1).pdf"
+.\pdfcombine "C:\Users\crbk01\Desktop\Ny mapp (2)" "C:\Users\crbk01\Desktop\Ny mapp (3)" C:\Users\crbk01\Desktop\new.pdf
+.\cpdf "H:\hämtade filer\MHN-2018-826_2_004.pdf" "H:\hämtade filer\SeC_Man-Admin_ds_EN_USA_120109 (1).pdf" out.pdf
+.\cpdf "H:\hämtade filer\MHN-2018-826_2_004.pdf" "H:\hämtade filer\SeC_Man-Admin_ds_EN_USA_120109 (1).pdf" c:\users\crbk01\desktop\out.pdf
+.\cpdf "H:\hämtade filer\MHN-2018-826_2_004.pdf" "H:\hämtade filer\SeC_Man-Admin_ds_EN_USA_120109 (1).pdf" -o out.pdf

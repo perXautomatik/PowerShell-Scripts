@@ -1,0 +1,106 @@
+.\fx-win.exe
+echo '{"key": "value"}' | .\fx-win.exe 'x => x.key'
+. .\fx-win.exe
+echo '{"key": "value"}' | fx 'x => x.key'
+cd 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile'
+ping google.com
+ping www.google.com
+echo '{"key": "value"}' | fx 'x => x.key'
+echo '{"key": "value"}' | .\fx-win.exe 'x => x.key'
+ping google.com
+cat 'D:\OneDrive\TabSessionManager - Backup\EdgeBookmarksFile\bookmarks' | fx
+JsonFx
+. .\fx-win.exe
+JsonFx ?
+JsonFx 'this.roots' 'this[1]'
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe"                                                                                                      
+JsonFx 'this.roots' ?
+JsonFx 'this.roots' 'this.bookmark_bar' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.name'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[1]'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children'
+clear
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.name'
+JsonFx 'this.roots' 'this.bookmark_bar' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this.0'?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' '0'?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' '0' 'this[1]' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' '0' 'this[1]' 
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' '0' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' '0'  
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children'
+clear
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children'?
+JsonFx
+.\fx-win.exe
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map'?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' '0' 'this.map'?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' '0' 
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children'  
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[1]'  
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[1]' '[1]' 
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this[1]'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this[0]'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this.[0]'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this.map[0]'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[1]' 'this.map(0)'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map(0)'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this' 'this' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' ?
+JsonFx 'this.roots' 'this.bookmark_bar'  ?
+JsonFx 'this.roots' 'this.bookmark_bar'  'this.type'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this.type' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map()' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' 'this.map' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children.map' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.map(children)' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children.this' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' ?
+&"C:\Program Files\TortoiseGit\bin\TortoiseGitProc.exe -command repostatus -path C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell"                
+Import-Module ecoargs                                                                                                                                        
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.name' 
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.name'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children'
+clear
+.\fx-win.exe
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' 'this.map(x => x.name)'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.name)'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.name, x.url)'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.name x.url)'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.name x => x.url)'
+.\fx-win.exe 
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe 'this.map(x => x.url)'
+.\fx-win.exe 
+echo '[1,2,3]' | .\fx-win.exe ?
+echo '[1,2,3]' | .\fx-win.exe '{...this, }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this, }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name,...this.url }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name,...this.url}'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name,this.url}'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name, this.url}'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name, this}'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this, this}'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this, this.name}'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.name, }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{... }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{..., }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this, }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{...this.x, }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe ?
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{this.map(x => x.name), }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{map(x => x.name), }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ x.name), }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ name), }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ name, }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ this.name, }'
+JsonFx 'this.roots' 'this.bookmark_bar' 'this.children[0]' 'this.children[0]' 'this.children' | .\fx-win.exe '{ this, }'

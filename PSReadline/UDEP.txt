@@ -1,0 +1,55 @@
+UDPE -OwningProcess
+Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
+UDPE | Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
+UDPE localPort | Get-Process -Id (Get-NetTCPConnection -LocalPort portNumber).OwningProcess
+UDPE | Format-List -Property localPort | Get-Process -Id (Get-NetTCPConnection -LocalPort $_).OwningProcess
+UDPE | Format-List -Property localPort
+UDPE -Property localPort
+UDPE -Port
+UDPE | Format-List -Property 
+UDPE | Format-List 
+UDPE -Property localPort
+UDPE | Format-List -Property localPort
+(UDPE).localPort | Get-Process -Id (Get-NetTCPConnection -LocalPort $_).OwningProcess
+(UDPE).localPort | parse | Get-Process -Id (Get-NetTCPConnection -LocalPort $_).OwningProcess
+(UDPE).localPort | parse 
+parse(UDPE).localPort
+(UDPE).localPort | parse(''+$_)
+(UDPE).localPort | ToUInt16($_) 
+ToUInt16(UDPE).localPort
+(UDPE).localPort | [Convert]::ToInt16("$_",2)
+(UDPE).localPort | [Convert]::ToInt16
+[Convert]::ToInt16(UDPE).localPort
+[Convert]::ToInt16((UDPE).localPort)
+[Convert]::ToInt16((UDPE).localPort,2)
+(UDPE).localPort |ForEach-Object {  [Convert]::ToInt16{$PSItem} } 
+(UDPE).localPort |ForEach-Object {  [Convert]::ToInt16{''+$PSItem} } 
+(UDPE).localPort |ForEach-Object {  [Convert]::ToInt16{$_} } 
+(UDPE)|ForEach-Object {  [Convert]::ToInt16{$_.localPort} } 
+(UDPE)|ForEach-Object {  [Convert]::ToInt16{"$_.localPort"} } 
+(UDPE)|ForEach-Object {  "$_.localPort" } 
+(UDPE)|ForEach-Object {  $_ } 
+(UDPE)|localPort|ForEach-Object {  $_ } 
+(UDPE)|$_.localPort|ForEach-Object {  $_ } 
+(UDPE)|$_.localPort
+(UDPE).localPort | foreach {}
+(UDPE).localPort | foreach {$_ }
+(UDPE).localPort | foreach {"$_" } | [Convert]::ToInt16{$_}
+(UDPE).localPort | foreach {[Convert]::ToInt16{$_}}
+(UDPE).localPort | foreach {"$_" } | foreach{[Convert]::ToInt16{$_}}
+(UDPE).localPort | foreach {""+="$_" } | foreach{[Convert]::ToInt16{$_}}
+(UDPE).localPort | foreach {$_+="" } | foreach{[Convert]::ToInt16{$_}}
+(UDPE).localPort | foreach {$_+="" } 
+(UDPE).localPort | foreach {$_ = ""|$_ } 
+(UDPE).localPort | foreach {"" | $_ } 
+(UDPE).localPort | foreach {" " + $_ }  | foreach{[convert]::ToInt16{$_}}
+(UDPE).localPort | get-content {$_}  | foreach{[convert]::ToInt16{$_}}
+get-content ( (UDPE).localPort ) | foreach{[convert]::ToInt16{$_}}
+ (UDPE).localPort | %{[convert]::ToInt16{$_}}
+(UDPE).localPort | Get-Process -Id (Get-NetTCPConnection -LocalPort [int]$_).OwningProcess
+(UDPE).localPort | Get-Process -Id (Get-NetTCPConnection -LocalPort [uint16int]$_).OwningProcess
+(UDPE).localPort | Get-Process -Id (Get-NetTCPConnection -LocalPort [uint16]$_).OwningProcess
+(UDPE).localPort | %{[int]$_} | Get-Process -Id (Get-NetTCPConnection -LocalPort $_).OwningProcess
+(UDPE).localPort | %{[int]$_} | %{Get-Process -Id (Get-NetTCPConnection -LocalPort $_).OwningProcess}
+(Get-NetUDPEndpoint -LocalAddress.).localPort | %{[int]$_} | %{Get-Process -Id (Get-NetTCPConnection -LocalPort $_).OwningProcess}
+(Get-NetUDPEndpoint -LocalAddress local ).localPort | %{[int]$_} | %{Get-Process -Id (Get-NetTCPConnection -LocalPort $_).OwningProcess}

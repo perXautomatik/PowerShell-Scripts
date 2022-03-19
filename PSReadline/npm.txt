@@ -1,0 +1,12 @@
+
+npm config get prefix
+npm install -g mkg
+nodejs npm install -g gistup
+npm install -g gistup
+npm install -g gistup
+ls C:\Users\chris\AppData\Roaming\npm
+npm install -g gistup
+nodejs npm install -g gistup
+
+npm install -g npm@7.21.0
+npm install pre-commit-scripts --no-save

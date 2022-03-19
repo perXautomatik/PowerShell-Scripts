@@ -1,0 +1,31 @@
+echoargs
+Install-Module Pscx -Scope CurrentUser -AllowClobber
+echoargs ".\everything.exe '-create-file-list' 'myfilelist.efu' 'E:\toDatabase\'"
+make-alias 
+set-alias EchoArgs &'\E:\LinksToNas\EchoArgs.exe'
+set-alias EchoArgs "&'\E:\LinksToNas\EchoArgs.exe'"
+echoArgs
+set-alias EchoArgs '.\E:\LinksToNas\EchoArgs.exe'
+echoArgs
+set-alias EchoArgs '. .\E:\LinksToNas\EchoArgs.exe'
+echoArgs
+import-Module &
+Import-Module &
+import-Module "&"
+Import-Module EchoArgs
+&'.\E:\LinksToNas\EchoArgs.exe'
+\E:\LinksToNas\EchoArgs.exe
+ls E:\LinksToNas\
+&'E:\LinksToNas\EchoArgs.exe'
+set alias EchoArgs &'E:\LinksToNas\EchoArgs.exe'
+set alias EchoArgs "&'E:\LinksToNas\EchoArgs.exe'"
+.\E:\LinksToNas\EchoArgs.exe
+cd E:\LinksToNas\
+.\EchoArgs.exe 'notepad -a'
+echoArgs
+
+Import-Module echoargs                                                                                                                                       
+Import-Module pscx                                                                                                                                           
+Install-Module -Name Pscx                                                                                                                                    
+echoargs &"TortoiseGitProc -command repostatus -path C:\Users\crbk01\OneDrive - Region Gotland\WindowsPowerShell"       
+echoargs        

@@ -1,0 +1,22 @@
+set-alias everything 'E:\LinksToNas\Everything.exe'
+everything
+set-alias echoArgs 'E:\LinksToNas\EchoArgs.exe'
+Everything.exe -create-file-list "myfilelist.efu" "E:\ToDatabase" -create-file-list-exclude-files "*.tmp"
+".\Everything.exe" -create-file-list "myfilelist.efu" "E:\ToDatabase" -create-file-list-exclude-files "*.tmp"
+".\everything.exe" -ArgumentList '-create-file-list "myfilelist.efu" "E:\toDatabase\" -create-file-list-exclude-files "*.tmp"'
+Run-Process ".\everything.exe" -ArgumentList '-create-file-list "myfilelist.efu" "E:\toDatabase\" -create-file-list-exclude-files "*.tmp"'
+& ".\everything.exe" -ArgumentList '-create-file-list "myfilelist.efu" "E:\toDatabase\" -create-file-list-exclude-files "*.tmp"'
+& ".\everything.exe" '-create-file-list "myfilelist.efu" "E:\toDatabase\" -create-file-list-exclude-files "*.tmp"'
+& ".\everything.exe '-create-file-list' 'myfilelist.efu' 'E:\toDatabase\'"
+everything "'-create-file-list' 'myfilelist.efu' 'E:\toDatabase\'"
+everything -create-file-list' 'myfilelist.efu' 'E:\toDatabase\
+everything -argument-list  "-create-file-list' 'myfilelist.efu' 'E:\toDatabase\"
+echoargs "everything -create-file-list' 'myfilelist.efu' 'E:\toDatabase\"
+echoargs "-create-file-list' 'myfilelist.efu' 'E:\toDatabase\"
+echoargs "everything '-create-file-list' 'myfilelist.efu' 'E:\toDatabase\"
+echoargs "everything 'create-file-list' 'myfilelist.efu' 'E:\toDatabase\"
+ "everything 'create-file-list' 'myfilelist.efu' 'E:\toDatabase\"
+everything 'create-file-list' 'myfilelist.efu' 'E:\toDatabase\'
+everything create-file-list 'myfilelist.efu' 'E:\toDatabase\'
+Everything.exe
+.\Everything.exe

@@ -1,0 +1,6 @@
+db2 list db directory
+Get-SqlDatabase
+Get-SqlInstance -Credential $Credential -MachineName "Computer001"
+Get-SqlInstance -Credential $Credential -MachineName "5CG84229D5.adm.gotland.se"
+Get-SqlInstance -Credential $Credential -MachineName "5CG84229D5"
+Get-SqlInstance -Credential $Credential

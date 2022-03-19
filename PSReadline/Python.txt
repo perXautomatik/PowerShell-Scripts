@@ -1,0 +1,67 @@
+pip install simplegist
+python -m pip install --upgrade pip
+notepad config.py
+GHgist
+python GHgist
+SimpleGist
+python SimpleGist
+py -m pip install --user virtualenv
+python -m pip install --user virtualenv
+E:
+mkdir pythonEnv
+cd .\pythonEnv\
+python -m venv env
+.\env\Scripts\activate
+pip install simplegist
+notepad config.py
+GHgist = Simplegist()
+from simplegist import SimpleGist
+ls
+cd env
+ls
+notepad .\pyvenv.cfg
+GHgist = Simplegist()
+notepad config.py
+notepad ./config.py
+cd ..
+notepad ./config.py
+GHgist = Simplegist(username='perXautomatik',api_token='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')
+GHgist = Simplegist(username='perXautomatik' , api_token='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')
+GHgist = Simplegist(username='perXautomatik')
+GHgist = Simplegist(username='perXautomatik' ; api_token='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')
+GHgist = Simplegist(username='perXautomatik' api_token='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')
+GHgist = Simplegist(username= 'perXautomatik' , api_token= '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')
+GHgist = Simplegist(username ='perXautomatik' , api_token ='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')
+GHgist = Simplegist('perXautomatik','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')
+simplegist import SimpleGist
+notepad test.py
+python test.py
+notepad test.py
+python test.py
+notepad E:\pythonEnv\env\lib\site-packages\simplegist\__init__.py
+ls E:\pythonEnv\env\lib\site-packages\simplegist\
+cd E:\pythonEnv\env\lib\site-packages\simplegist\
+notepad .\config.py
+simplegist import SimpleGist
+cd \
+ls
+cd pythonEnv
+ls
+python test.py
+cd E:\pythonEnv\env\lib\site-packages\simplegist\
+ls
+notepad .\simplegist.py
+notepad .\config.py
+notepad .\__init__.py
+python simplegist.py
+import simplegist.py
+notepad test.py
+python test.py
+notepad do.py
+py .\attemptFileRame.py
+assoc .py=Python.File
+ftype Python.File="C:\Path\to\pythonw.exe %1 %*"
+."C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1776.0_x64__qbz5n2kfra8p0\pythonw3.9.exe"
+ftype Python.File="C:\Path\to\pythonw.exe %1 %*"
+assoc .py=Python.File
+."C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.1776.0_x64__qbz5n2kfra8p0\pythonw3.9.exe"

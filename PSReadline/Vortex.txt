@@ -1,0 +1,227 @@
+& bsarch
+.\bsarch
+.\C:\Modding\Fallout4\fallout4\Tools\BSArch\bsarch.exe
+.\"C:\Modding\Fallout4\fallout4\Tools\BSArch\bsarch.exe"
+"C:\Modding\Fallout4\fallout4\Tools\BSArch\bsarch.exe"
+BSArch meshes WMEMeshes -fnv -share -mt
+BSArch "E:\Vortex Mods\falloutnv\Weapon Mods Expanded v1_1_4-39651-1-1-4\meshes" WMEMeshes -fnv -share -mt
+BSArch "E:\Vortex Mods\falloutnv\Weapon Mods Expanded v1_1_4-39651-1-1-4\meshes" "C:\WMEMeshes.bsa" -fnv -share -mt
+BSArch "E:\Vortex Mods\falloutnv\Weapon Mods Expanded v1_1_4-39651-1-1-4\" "C:\WMEMeshes.bsa" -fnv -share -mt
+BSArch "E:\Vortex Mods\falloutnv\Weapon Mods Expanded v1_1_4-39651-1-1-4" "C:\WMEMeshes.bsa" -fnv -share -mt
+BSArch pack "E:\Vortex Mods\falloutnv\Weapon Mods Expanded v1_1_4-39651-1-1-4\meshes" WMEMeshes -fnv -share -mt
+BSArch pack "E:\Vortex Mods\falloutnv\Weapon Mods Expanded v1_1_4-39651-1-1-4\textures" WMEtextures -fnv -share -mt
+BSArch pack "E:\Vortex Mods\falloutnv\Weapon Mods Expanded v1_1_4-39651-1-1-4\textures" WMEtextures.bsa -fnv -z -share -mt
+BSArch pack "E:\Vortex Mods\falloutnv\Weapon Mods Expanded v1_1_4-39651-1-1-4\meshes" WMEMeshes.bsa -z -fnv -share -mt
+BSArch pack "textures\landscape" floraTextureLandscape.bsa -z -fnv -share -mt
+BSArch pack "textures" bnbArmourTextures.bsa -z -fnv -share -mt
+BSArch pack "meshes" bnbArmourMeshes.bsa -z -fnv -share -mt
+BSArch pack "meshes" fafnirUniqueTTwOverhaulMeshes.bsa -z -fnv -share -mt
+BSArch pack "textures" fafnirUniqueTTwOverhaulTextures.bsa -z -fnv -share -mt
+BSArch pack "textures" MojaveRaidersTextures.bsa -z -fnv -share -mt
+BSArch pack "textures" LodAdditionsTextures.bsa -z -fnv -share -mt 
+BSArch pack "meshes" LodAdditionsMeshes.bsa -z -fnv -share -mt 
+BSArch pack "BNB_Body-35047-1-0" BNB_Body-35047-1-0\bnbBody.bsa -z -fnv -share -mt 
+BSArch pack "Sound" HumpingTheMojaveSound.bsa  -fnv -share -mt 
+
+gc '.\NPCs wear NSNS adult v2.esp' | select -first 10 # head
+gc '.\NPCs wear NSNS NV.esp' | select -first 10 # head
+gc '.\cell.esp' | select -first 10 # head
+gc '.\cell`[11`]`[10582`]27004458.esp' | select -first 10 # head
+gc .\FormiD.esp | select -first 10 # head
+gc .\FormiD.esp | select -first 1 # head
+gc .\FormiD.esp | select -first 2 # head
+gc .\FormiD.esp | select -first 3 # head
+gc .\FormiD.esp | select -first 3 | split "DATMAST"
+gc .\FormiD.esp | select -first 3 -split "DATMAST"
+(gc .\FormiD.esp | select -first 3).split "DATMAST"
+(gc .\FormiD.esp | select -first 3).split("DATMAST")
+(gc .\FormiD.esp | select -first 3).split("esp").split("esm").split("DATMAST")
+(gc .\FormiD.esp | select -first 3).split("esp").split("esm")
+(gc .\FormiD.esp | select -first 3).tostring().split("esp").split("esm")
+(gc .\FormiD.esp | select -first 3 -join).split("esp").split("esm")
+(gc .\FormiD.esp | select -first 3).join.split("esp").split("esm")
+(gc .\FormiD.esp | select -first 3) | join
+(gc .\FormiD.esp | select -first 3) | Join-String
+(gc .\FormiD.esp | select -first 3) | Join-Strin
+Join-String (gc .\FormiD.esp | select -first 3) 
+(gc .\FormiD.esp | select -first 3) | Join-String -Property Name -DoubleQuote -Separator ', '
+
+(gc .\FormiD.esp | select -first 3) | Join-String -Property Name -DoubleQuote -Separator ', '
+-join (gc .\FormiD.esp | select -first 3).split("esp")
+-join (gc .\FormiD.esp | select -first 3).split(".")
+-join (gc .\FormiD.esp | select -first 3) | split(".")
+-join (gc .\FormiD.esp | select -first 3) | -split(".")
+-join (gc .\FormiD.esp | select -first 3) | -split "."
+-split (-join (gc .\FormiD.esp | select -first 3)) "."
+(-join (gc .\FormiD.esp | select -first 3)).split(".")
+(-join (gc .\FormiD.esp | select -first 3)).split("DATMAST")
+(-join (gc .\FormiD.esp | select -first 3)).split(".").split("DATMAST")
+(-join (gc .\FormiD.esp | select -first 3)).split(".").split("DAT")
+(-join (gc .\FormiD.esp | select -first 3)).split(".")
+(-join (gc .\FormiD.esp | select -first 3)).split(".es")
+(-join (gc .\FormiD.esp | select -first 3)).split("[.]es")
+(-join (gc .\FormiD.esp | select -first 3)).split(".") -replace '\.','*.'
+(-join (gc .\FormiD.esp | select -first 3)).replace('\.','*.')
+(-join (gc .\FormiD.esp | select -first 3))split(".").replace('\.','*.')
+(-join (gc .\FormiD.esp | select -first 3)).split(".").replace('\.','*.')
+(-join (gc .\FormiD.esp | select -first 3)).split(".").replace('\W','*.')
+(-join (gc .\FormiD.esp | select -first 3)).replace('\W','*.')
+(-join (gc .\FormiD.esp | select -first 3)).replace('\W','.')
+(-join (gc .\FormiD.esp | select -first 3)).replace('/W','.')
+(-join (gc .\FormiD.esp | select -first 3)).replace('\w','.')
+(-join (gc .\FormiD.esp | select -first 3)) -replace "\w","."
+(-join (gc .\FormiD.esp | select -first 3)) -replace "\W","."
+(-join (gc .\FormiD.esp | select -first 3)) -replace "\W","å"
+((-join (gc .\FormiD.esp | select -first 3)) -replace "\W*","å")
+((-join (gc .\FormiD.esp | select -first 3)) -replace "\W{1,}","å").split("å")
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[\W ]{1,}","å").split("å")
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w ]{1,}","å").split("å").unique
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w ]{1,}","å").split("å") | get-unique
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w ]{1,}","å").split("å") | Get-Unique
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") | Get-Unique
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$"
+(((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$") | select -first 13
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | where-object {$_ -contain ((((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$") | select -first 13))}
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | where-object {$_ -is ((((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$") | select -first 13))}
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | where-object {$_ -is ((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$") | select -first 13))}
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | where-object {$_ -is-in ((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$") | select -first 13))}
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | where-object {$_ --in ((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$") | select -first 13))}
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | where-object {$_ -in (((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$") | select -first 13)))}
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | ?{(((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | select -first 13) -contains $_}
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | !?{(((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | select -first 13) -contains $_}
+((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | ?{(((-join (gc .\FormiD.esp | select -first 3)) -replace "[^\w. ]{1,}","å").split("å") -match "^.*[.](esp|esm)$" | select -first 13) -NotContains $_}
+.\bethkit.exe recepie.esp recepie.esx
+.\bethkit.exe "E:\SteamLibrary\steamapps\common\Fallout New Vegas\recepie.esp" "E:\SteamLibrary\steamapps\common\Fallout New Vegas\r.esx"
+.\bethkit.exe convert "E:\SteamLibrary\steamapps\common\Fallout New Vegas\recepie.esp" "E:\SteamLibrary\steamapps\common\Fallout New Vegas\r.esx"
+
+BSArch pack "BNB_Body-35047-1-0" BNB_Body-35047-1-0\bnbBody.bsa -z -fnv -share -mt 
+BSArch unpack "YamsPinupParade.bsa" -mt
+BSArch -mt unpack "YamsPinupParade.bsa" "folder"
+BSArch unpack "YamsPinupParade.bsa" "folder" -mt 
+BSArch unpack "YamsPinupParade.bsa" "E:\Vortex Mods\falloutnv\Resources-43341-1-0" -mt 
+BSArch pack "textures" textures.bsa -z -fnv -share -mt 
+BSArch pack "textures" door - texturesCompOverhaul.bsa -z -fnv -share -mt 
+BSArch pack "meshes" door - meshesCompOverhaul.bsa -z -fnv -share -mt
+BSArch pack "sound" door - soundCompOverhaul.bsa -fnv -share -mt
+BSArch pack "sound" door-soundCompOverhaul.bsa -fnv -share -mt
+BSArch pack "meshes" door-meshesCompOverhaul.bsa -z -fnv -share -mt
+BSArch pack "textures" door-texturesCompOverhaul.bsa -z -fnv -share -mt
+BSArch pack "sound" door-soundSedusingW.bsa -fnv -share -mt
+BSArch pack "textures" door-texturesSedusingW.bsa -z -fnv -share -mt
+BSArch pack "meshes" door-meshesSedusingW.bsa -z -fnv -share -mt
+BSArch pack "meshes" door-meshesAssetPack.bsa -z -fnv -share -mt
+BSArch pack "textures" door-texturesAssetPack.bsa -z -fnv -share -mt
+BSArch pack "sound" door-soundTTW.bsa -fnv -share -mt
+BSArch pack "textures" door-texturesBNBBody.bsa -z -fnv -share -mt
+BSArch pack "meshes" door-meshesBnBBody.bsa -z -fnv -share -mt
+BSArch pack meshes "Type3MClothing - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "Type3MClothing - textures.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "seducingMoira - Sound.bsa" -fnv -share -mt
+BSArch pack meshes "ScrapAndRepair - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "ScrapAndRepair - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "Roberts_NewVegas - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "Roberts_NewVegas - meshes.bsa" -z -fnv -share -mt
+BSArch unpack '.\door - textures.bsa' "texures" -mt 
+BSArch unpack '.\door - textures.bsa' "E:\Vortex Mods\falloutnv\Resources-43341-1-0" -mt 
+BSArch pack "Sound" "Reactive People II - Sneak & Diversion - Sound.bsa" -fnv -share -mt
+BSArch pack textures "ResourcefullCraftMen - textures.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "K2_RaiderDolls - Sound.bsa" -fnv -share -mt
+BSArch pack textures "RB_RaiderPA - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "RB_RaiderPA - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "RagdollsTTW - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "Radar - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "Quick Grenade Hotkey - textures.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "Immersive Primary Needs - Sound.bsa" -fnv -share -mt
+BSArch pack textures "FO4Crafting - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "FO4Crafting - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "oHUD - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "No Sleeves No Shirts NV Special - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "No Sleeves No Shirts NV - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "NPCsSprint - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "NCR Weapon Overhaul - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "NCR Weapon Overhaul - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "Mojave Arsenal - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "Frequency - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "medtektraumakit_edisleado - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "medtektraumakit_edisleado - textures.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "medtektraumakit_edisleado - Sound.bsa" -fnv -share -mt
+BSArch pack meshes "EliteRangerCombatArmourComponents - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "LUMENARIUM - Working Sunglasses ONLY - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "Logic and Consistency Fixes - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "LMDStorageBag - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "LMDStorageBag - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "LiveDismember - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "Light My Flare - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "Light My Flare - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "LegionLoreFriendly - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "JustVisualObjectives - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "JSawyer Ultimate - textures.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "JSawyer Ultimate - Sound.bsa" -fnv -share -mt
+BSArch pack textures "JIP MiniMap - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "JIP Fast-Travel Anywhere - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "Inventory Search - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "IntimacyOverhaul_v1.0 - textures.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "IntimacyOverhaul_v1.0 - Sound.bsa" -fnv -share -mt
+BSArch pack textures "iAssist - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "iAssist - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "HUD Extended - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "map_icon_overhaul - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "Equipment Restoration Project - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "Equipment Restoration Project - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "Enhanced Item Info - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "Endless Warfare - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "Endless Warfare - meshes.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "Endless Warfare - Sound.bsa" -fnv -share -mt
+BSArch pack meshes "RangerAdvancedCustomOvercoats - meshes.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "Definitive Camera Hotkeys PHW - Sound.bsa" -fnv -share -mt
+BSArch pack meshes "Food Scraps - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "Flora Overhaul - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "Flora Overhaul - textures.bsa" -z -fnv -share -mt
+BSArch pack "music" "TaleOfTwoWastelands - music.bsa" -fnv -share -mt
+BSArch pack textures "Blind - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "Blind - meshes.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "TTW Barter with Raiders - Sound.bsa" -fnv -share -mt
+BSArch pack "Sound" "wsex - Sound.bsa" -fnv -share -mt
+BSArch pack meshes "wsex - meshes.bsa" -z -fnv -share -mt
+BSArch pack "Sound" "bittercup_comp - Sound.bsa" -fnv -share -mt
+BSArch pack meshes "Skill Bonus Misc. Items - Complete Edition - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "Skill Bonus Misc. Items - Complete Edition - textures.bsa" -z -fnv -share -mt
+BSArch unpack '.\Unofficial Fallout 3 Patch.bsa' "a" -mt 
+BSArch unpack '.\Flora Overhaul - TextureLandscape.bsa' "" -mt 
+BSArch unpack '.\Flora Overhaul - TextureLandscape.bsa'  -mt 
+BSArch unpack '.\Flora Overhaul - TextureLandscape.bsa' '' -mt 
+BSArch unpack '.\Flora Overhaul - TextureLandscape.bsa' 'a' -mt 
+BSArch unpack '.\Flora Overhaul - meshes.bsa' 'meshes' -mt 
+BSArch unpack '.\Flora Overhaul - Textures.bsa' 'textures' -mt 
+
+BSArch unpack '.\Bouncing Natural Breasts - meshesBnBBody.bsa' 'meshes' -mt 
+BSArch unpack '.\Bouncing Natural Breasts - texturesBNBBody.bsa' 'textures' -mt 
+BSArch unpack '.\Bouncing Natural Breasts - Body.bsa' 'a' -mt 
+BSArch unpack '.\Bouncing Natural Breasts - Textures.bsa' 'textures' -mt 
+BSArch unpack '.\Bouncing Natural Breasts - Meshes.bsa' 'meshes' -mt 
+BSArch unpack '.\No Sleeves No Shirts NV - meshes.bsa' 'meshes' -mt 
+BSArch pack textures\interface "TribalPack - Textures.bsa" -z -fnv -share -mt
+BSArch pack textures\landscape "TribalPack - Textures2.bsa" -z -fnv -share -mt
+BSArch pack textures\armor "TribalPack - Textures2.bsa" -z -fnv -share -mt
+BSArch pack textures\landscape "TribalPack - Textures2.bsa" -z -fnv -share -mt
+BSArch pack textures\armor "TribalPack - Textures3.bsa" -z -fnv -share -mt
+BSArch pack textures "TribalPack - Textures4.bsa" -z -fnv -share -mt
+BSArch pack meshes "TribalPack - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "CPI Icons - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "Improved Raiders - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "S6S's Prodlimen Creature Pack - textures.bsa" -z -fnv -share -mt
+BSArch pack sound "Improved Raiders - Sound.bsa" -fnv -share -mt
+BSArch pack meshes "Bouncing Natural Breasts - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "Improved Raiders - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "No Sleeves No Shirts NV - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "Fiends With Style - meshes.bsa" -z -fnv -share -mt
+BSArch pack meshes "S6S's Prodlimen Creature Pack - meshes.bsa" -z -fnv -share -mt
+BSArch pack textures "Bouncing Natural Breasts - textures.bsa" -z -fnv -share -mt
+BSArch pack textures "TTW Armored Wasteland - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "TTW Armored Wasteland - meshes.bsa" -z -fnv -share -mt
+BSArch pack menus "JIP Improved Recipe Menu - menus.bsa" -z -fnv -share -mt
+BSArch pack textures "SarcasticOffensiveLoadingScreens - textures.bsa" -z -fnv -share -mt
+BSArch pack menus "DarNifiedUINV - menus.bsa" -z -fnv -share -mt
+BSArch pack sound "Smalltalk - Sound.bsa" -fnv -share -mt
+BSArch pack textures "Fiends With Style - textures.bsa" -z -fnv -share -mt
+BSArch pack meshes "No sleeves no shirts - meshes.bsa" -z -fnv -share -mt

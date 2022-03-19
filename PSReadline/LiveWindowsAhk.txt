@@ -1,0 +1,113 @@
+git add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git add http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git remote add origin http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git remote -v
+git remote add origin http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git init
+git add http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git --work-tree=/ add http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git --work-tree=/ add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git clone --bare 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git archive --remote=http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git archive --add-file=http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git clone 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' livewindows.ahk
+git submodule add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' livewindows.ahk
+git submodule add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git fetch --all 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add origin 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git fetch --all 
+git clone 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' livewindows.ahk
+git archive --add-file=http://www.holomind.de/ahk/livewindows/livewindows.ahk
+git clone --bare 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -v
+git fetch -all
+git fetch --all --force
+git config --local --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+git fetch --all --force
+git pull
+git clone ...(remote) new_folder
+git clone ...(local_remote) new_folder
+git remote -v
+git clone ...(orgin) new_folder
+git clone ...(origin) new_folder
+git clone origin new_folder
+git clone ...(origin) new_folder
+git remote -v
+git clone remote
+git clone origin
+git reset --mixed
+git fsck --full
+git gc --auto
+git prune --expire now
+git reflog --all
+git clone origin
+git config --local --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/*
+git clone origin
+git pull
+git fetch --all --force
+git clone --bare 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add q 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+get-history                                                                                                                                                  
+git remote -v
+git remote -f q 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -m -mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote --mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --mirror 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --mirror=fetch 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --m --mirror=fetch 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --master --mirror=fetch 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' ahk
+git remote add --master --mirror=fetch ahk 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote -v
+git fetch --all --force
+git pull ahk
+git fetch ahk --force
+git fetch --depth=1
+git config  transfer.hideRefs refs/secret
+git fetch --depth=1
+git fetch ahk --force
+git pull ahk
+git config transfer.hideRefs '!refs/secret/not-so-secret'
+git pull ahk
+git fetch ahk --force
+git config  uploadpack.allowAnySHA1InWant
+git fetch ahk --force
+git pull ahk
+git pull --rebase 
+git pull
+get-history -Verbose                                                                                                                                         
+git reset --mixed
+git pull --rebase 
+git gc --auto
+git ls-remote 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git remote add --master --mirror=fetch livewindows 'http://www.holomind.de/ahk/livewindows'
+git add livewindows.ahk
+git pull --rebase 
+git pull livewindows
+git clone livewindows
+git clone -force livewindows
+git clone --bare livewindows
+
+git clone --dissociate livewindows
+git update-index --assume-unchanged 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git fetch
+git clone
+git pull livewindows
+git pull 
+git clone  --depth 1  --filter=blob:none   --sparse  'http://www.holomind.de/ahk/livewindows/livewindows.ahk' ahk
+git clone  --depth 1  --filter=blob:none   --sparse  'http://www.holomind.de/ahk/livewindows/' ahk
+git config --global core.compression 0
+git clone  --depth 1  --filter=blob:none   --sparse  'http://www.holomind.de/ahk/livewindows/' ahk
+git checkout ahk
+git checkout  'http://www.holomind.de/ahk/livewindows/' ahk
+git checkout 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git show 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' > ahk
+git archive --remote='http://www.holomind.de/ahk/livewindows/livewindows.ahk' > ahk
+git clone --no-checkout --depth=1 --no-tags 'http://www.holomind.de/ahk/livewindows/livewindows.ahk'
+git restore --staged
+git checkout
+wget 'http://www.holomind.de/ahk/livewindows/livewindows.ahk' > livewindows.ahk
+remote add livewindows 'C:\Users\crbk01\Desktop\Ny mapp'
+git remote add livewindows 'C:\Users\crbk01\Desktop\Ny mapp'

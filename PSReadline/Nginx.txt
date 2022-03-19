@@ -1,0 +1,26 @@
+start nginx
+tasklist /fi "imagename eq nginx.exe"
+curl localhost;.\nginx -s reload
+curl localhost
+.\nginx acces_log
+.\nginx -s acces_log
+.\nginx -s reload
+curl localhost/root
+curl localhost\root
+curl \
+.\nginx -s reload
+curl localhost
+curl direct_php_upstream
+.\nginx -s reload
+curl localhost
+curl \
+.\nginx -s reload
+curl localhost;.\nginx -s reload
+curl localhost
+
+D:
+cd "D:\portapps\9. browser Network Database\PortableApps\nginx-1.21.5"
+nginx start
+.\nginx start
+start nginx
+php -S localhost:3000

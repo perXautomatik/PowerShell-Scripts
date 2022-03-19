@@ -1,0 +1,23 @@
+
+Get-AppXPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+get-printer | $.portName
+get-printer.portName
+get-printer /portName
+get-help get-printer
+get-help | to-out
+get-help | out-host
+get-printer | out-host
+get-printer | format-wide -property portname
+get-printer | % {format-wide -property portname} | out-host
+get-printer | % {$_ format-wide -property portname} | out-host
+get-printer | % {$_} | out-host
+get-printer | format-list -property printername,drivername,portname | out-host
+get-printer | format-list -property name,drivername,portname | out-host
+get-printer | where-object {$_.name -like '*2339*'} |format-list -property name,drivername,portname | out-host
+Get-WmiObject -Class Win32_Product -Filter 'Name like "%adobe%"' | Select Caption,InstallLocation
+Get-WmiObject -Class Win32_Product -Filter 'Name like "%acrobat reader%"' | Select Caption,InstallLocation
+Get-ChildItem HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall | % { Get-ItemProperty $_.PsPath } | Select DisplayName,InstallLocation 
+Get-ChildItem HKLM:\SOFTWARE\adobe | % { Get-ItemProperty $_.PsPath } | Select DisplayName,InstallLocation 
+Get-ChildItem HKLM:\SOFTWARE\adobe\* | % { Get-ItemProperty $_.PsPath } | Select DisplayName,InstallLocation 
+(Get-CimInstance -ClassName Win32_Product | Where-Object Name -Like "*acrobat reader*").InstallLocation
+get-printer | where-object {$_.name -like '*2339*'} |format-list -property name,drivername,portname | out-host

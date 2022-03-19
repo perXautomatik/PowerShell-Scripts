@@ -1,0 +1,47 @@
+ls -help
+get-help ls
+ls -recurse
+tree
+get-help tree
+tree /F
+dir
+get-help dir
+dir -filter *.tab
+dir -filter *Fastigheter.tab
+
+
+.\try.ps1
+get-help out-file
+.\try.ps1
+dir.name
+(dir).name.replace(".doc","")
+(dir).name.replace(".docx",".doc").replace("doc","")
+(dir).name.replace(".docx",".doc").replace(".doc","")
+ls
+tree
+get-help tree
+tree /f
+get-childitem -recurse | select fullname
+(Get-ChildItem G:\mhk -Recurse).fullname > filename.txt
+(Get-ChildItem G:\mhk -Recurse).fullname | select-string "[^\)\w\\\-:.åäöÅÄÖ %\{,~$\(!@¤£é&=#§]"
+get-help select-string
+(Get-ChildItem G:\mhk -Recurse).fullname |  Where-Object { -match "[^\)\w\\\-:.åäöÅÄÖ %\{,~$\(!@¤£é&=#§]"}
+(Get-ChildItem G:\mhk -Recurse).fullname |  Where-Object {$_ -match "[^\)\w\\\-:.åäöÅÄÖ %\{,~$\(!@¤£é&=#§]"} | rename-item -newName {$_.name -replace '[^\)\w\\\-:.åäöÅÄÖ %\{,~$\(!@¤£é&=#§]','_'}
+Get-ChildItem G:\mhk -Recurse |  Where-Object {$_.name -match "[^\)\w\\\-:.åäöÅÄÖ %\{,~$\(!@¤£é&=#§]"} | rename-item -newName {$_.name -replace '[^\)\w\\\-:.åäöÅÄÖ %\{,~$\(!@¤£é&=#§]','_'}
+Get-ChildItem G:\mhk -Recurse |  Where-Object {$_.name -match "[^\\w\\:.åäöÅÄÖ,]"} | rename-item -newName {$_.name -replace '[^\\w\\:.åäöÅÄÖ,]','_'}
+Get-ChildItem G:\mhk -Recurse |  Where-Object {$_.name -match "[^\\w\\:.åäöÅÄÖ,]"} | rename-item -newName {$_.name -replace '[^\\w\\:.åäöÅÄÖ,]','_-_'}
+Get-ChildItem G:\mhk -Recurse |  Where-Object {$_.name -match "[^\\w\\:.åäöÅÄÖ,]"} | rename-item -newName {$_.name -replace -whatif '[^\\w\\:.åäöÅÄÖ,]','_-_'}
+get-children
+get-childitem -recirse
+get-childitem -recurse
+get-help get-childitem
+get-childitem -recurse -name
+(Get-ChildItem G:\mhk -Recurse).fullname |  Where-Object {$_ -match "[%\{,~$\(!@¤£é&=#§]"}
+(Get-ChildItem G:\mhk -Recurse).fullname |  Where-Object {$_ -match "[%\{~$\(!@¤£é&=#§]"}
+Get-ChildItem G:\mhk -Recurse |  Where-Object {$_.name -match "[%\{~$\(!@¤£é&=#§]"} | rename-item -newName {$_.name -replace '[%\{~$\(!@¤£é&=#§]','_'}
+(Get-ChildItem G:\mhk -Recurse).fullname |  Where-Object {$_ -match "[%\{,~$\(!@¤£é&=#§]"}
+$dirs = gci $tdc -directory -recurse | Where { (gci $_.fullName).count -eq 0 } | select -expandproperty FullName
+$dirs = gci "G:\mhk" -directory -recurse | Where { (gci $_.fullName).count -eq 0 } | select -expandproperty FullName
+(Get-ChildItem G:\mhk -Recurse).fullname > filename.txt
+cd..
+(Get-ChildItem G:\mhk -Recurse).fullname > filename.txt

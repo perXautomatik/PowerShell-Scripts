@@ -1,0 +1,65 @@
+
+git-subtree split --prefix=select/utbyte --branch=selectUtbyte
+git subtree add "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15"
+git subtree add "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\.git"
+git subtree --help
+git subtree add "origin"
+git subtree add --prefix "origin"
+git subtree add --prefix "04e1a5bf0947f38ce30fec92e8d35a04f0e8af9f"
+git subtree add --prefix /initial "origin" --squash
+git subtree add --prefix /initial "origin" "origionz"
+git subtree add --prefix=initial/ "origin" "origionz"
+git subtree add --prefix=initialz/ "origin" "origionz"
+touch .gitignore
+git touch .gitignore
+''> .gitignore
+touch .gitignore
+git add .gitignore
+git commit -m "initial commit"
+git remote add -f spoon-knife git@github.com:octocat/Spoon-Knife.git
+git remote add -f spoon-knife "origin"
+git remote add -f spoon-knifex "origin"
+git remote 
+git merge -s ours --no-commit --allow-unrelated-histories spoon-knife/main
+git merge -s ours --no-commit --allow-unrelated-histories origin/main
+git remote add -f spoon-knifeQ git@github.com:octocat/Spoon-Knife.git
+git remote add -f spoon-knifeW git@github.com:octocat/Spoon-Knife.git
+git remote 
+git merge -s ours --no-commit --allow-unrelated-histories spoon-knife/main
+git read-tree --prefix=spoon-knife/ -u spoon-knife/main
+git commit -m "Subtree merged in spoon-knife"
+git merge -s ours --no-commit --allow-unrelated-histories origin/main
+git merge -s ours --no-commit --allow-unrelated-histories origin/master
+git read-tree --prefix=origin/ -u origin/master
+git read-tree --prefix=/ -u origin/master
+''> .gitignore
+git add .gitignore
+git commit -m "initial commit"
+git read-tree --prefix=/ -u origin/master ''> .gitignore
+PS C:\Users\crbk01\Desktop\Ny mapp> git add .gitignore
+PS C:\Users\crbk01\Desktop\Ny mapp> git commit -m "initial commit"
+git remote add -f VisionFilInsert "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\.git"
+git fetch visionFilInsert/witouthIdeax
+git fetch VisionFilInsert/withoutIDeax
+git fetch VisionFilInsert
+git read-tree --prefix=/ -u VisionFilInsert/withoutIDeax
+git remote add -f selectUtbyte "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\select\utbyte\.git"
+git fetch selectUtbyte
+git read-tree --prefix=select/utbyte/ -u selectUtbyte/master
+git remote add -f PseudoUpdatera "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\Pseudo\Updatera\.git"
+git fetch PseudoUpdatera
+git read-tree --prefix=Pseudo/Updatera/ -u PseudoUpdatera/master
+git remote add -f PseudoSkapaH "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\Pseudo\SkapaH\.git"
+git fetch PseudoSkapaH
+git read-tree --prefix=Pseudo/SkapaH/ -u PseudoSkapaH/master
+git remote add -f PseudoUpdatera "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\Pseudo\Updatera\.git"
+git remote add -f PseudoCall "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\Pseudo\call\.git"
+git fetch PseudoCall
+git read-tree --prefix=Pseudo/call/ -u PseudoCall/master
+git remote add -f handToAr "C:\Users\crbk01\AppData\Roaming\JetBrains\DataGrip2021.1\consoles\db\49f168c8-015c-43d2-b9f4-06de275bdc15\HandToAr\.git"
+git fetch handToAr
+git read-tree --prefix=HandToAr/ -u HandToAr/master
+git remote add -f updateFileRef "C:\Users\crbk01\AppData\Local\Temp\48e52db1-5800-4ae8-8df3-9ce7ebb30d30\.git"
+git fetch updateFileRef
+git read-tree --prefix=updateFileRef/ -u updateFileRef/master
+.\accessdatabaseengine_x64.exe /quiet

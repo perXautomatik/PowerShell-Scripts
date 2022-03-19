@@ -1,0 +1,27 @@
+.\regjump.exe HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics
+$q = .\CustomForm.ps1 ; $q; $q
+$q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q
+$q = .\pshell\CustomForm.ps1 ;.\pshell\Elevate\SelfElevate.ps1 ".\regjump.exe $q"
+.\pshell\Elevate\SelfElevate.ps1 "$q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q"
+$z= .\pshell\ExecutionPath\execution-folder.ps1 ; .\pshell\Elevate\SelfElevate.ps1 "cd $z ; $q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q"
+$z= .\pshell\ExecutionPath\execution-folder.ps1 ; .\pshell\Elevate\SelfElevate.ps1 "cd $z ; $q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q ; wait-process"
+$z= .\pshell\ExecutionPath\execution-folder.ps1 ; .\pshell\Elevate\SelfElevate.ps1 cd $z ; $q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q ; wait-process
+$z= .\pshell\ExecutionPath\execution-folder.ps1 ; .\pshell\Elevate\SelfElevate.ps1 'cd $z ; $q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q ; wait-process'
+$z= .\pshell\ExecutionPath\execution-folder.ps1 ; .\pshell\Elevate\SelfElevate.ps1 .'cd $z ; $q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q ; wait-process'
+$z= .\pshell\ExecutionPath\execution-folder.ps1 ; .\pshell\Elevate\SelfElevate.ps1 invoke-command "cd $z ; $q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q ; wait-process"
+$z= .\pshell\ExecutionPath\execution-folder.ps1 ; $com = "cd $z ; $q = .\pshell\CustomForm.ps1 ; .\regjump.exe $q ; wait-process" ; .\pshell\Elevate\SelfElevate.ps1 invoke-command $com
+.\pshell\Elevate\SelfElevate.ps1 (.\regjump.exe (.\pshell\CustomForm.ps1))
+$a= .\pshell\CustomForm.ps1; .\pshell\Elevate\SelfElevate.ps1 .\regjump.exe $a
+$a= .\pshell\CustomForm.ps1; .\pshell\Elevate\SelfElevate.ps1 '.\regjump.exe $a'
+$a= .\pshell\CustomForm.ps1; .\pshell\Elevate\SelfElevate.ps1 .\regjump.exe -param $a
+.\execution-folder.ps1
+(.\execution-folder.ps1).paremt
+(.\execution-folder.ps1).parent
+$q = .\execution-folder.ps1 ; $q.parent
+$q = .\execution-folder.ps1 ; Split-path $q
+$q = .\execution-folder.ps1 ; $t = Split-path $q ; split-path $t
+.\check-if-files-contain-word.ps1 .\test.txt "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics"
+.\check-if-files-contain-word.ps1 .\test.txt "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics2"
+.\check-if-files-contain-word.ps1 .\test.txt "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics"
+.\check-if-files-contain-word.ps1 .\test.txt "HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics3"
+.\check-if-files-contain-word.ps1 .\test.txt

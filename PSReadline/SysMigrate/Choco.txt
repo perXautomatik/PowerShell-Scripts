@@ -1,0 +1,39 @@
+choco feature enable -n allowGlobalConfirmation
+choco install linkshellextension
+choco install npm
+Set-ExecutionPolicy RemoteSigned
+
+Install-Package --help
+Install-Package -help
+Install-Package --h
+
+mkg .\installChoclatery.ps1
+
+mkg .\installChoclatery.ps1
+cd C:\Users\chris\AppData\Roaming\npm && notepad mkg
+cd C:\Users\chris\AppData\Roaming\npm & notepad mkg
+cd C:\Users\chris\AppData\Roaming\npm
+notepad mkg
+
+choco install mongodb-shell
+ls C:\ProgramData\chocolatey\lib\mongodb-shell\tools\bin
+Install-Package MongoDB.Driver.core
+get-packagesource
+Find-Package -Name MongoDB.Driver.core
+Install-Package MongoDB.Driver.core
+Install-Package C:\Users\chris\Downloads\MongoDB.Driver.Core.2.13.0-beta1.nupkg
+
+choco install -y --force nodejs
+choco install nodejs.install
+choco upgrade nodejs.install
+choco install nodejs-lts
+
+choco install logexpert
+
+choco install powershell.portable
+choco uninstall powershell.portable
+choco install regcool.portable
+choco install actiona.portable
+choco install pathmanager.portable
+choco install tweakeze.portable
+choco install z-cron

@@ -1,0 +1,19 @@
+(Get-PSReadlineOption).HistorySavePath                                                                                                                       
+set-PSReadlineOption -HistorySavePath "C:\Users\crbk01\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt"                      
+Set-PSReadLineOption -HistorySavePath C:\Users\crbk01\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt -HistorySaveStyle in...
+Set-PSReadLineOption -HistorySavePath C:\Users\crbk01\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt -HistorySaveStyle sa...
+(Get-PSReadlineOption).HistorySavePath                                                                                                                       
+Get-PSReadLineOption                                                                                                                                         
+ [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState     
+ 
+ (Get-PSReadlineOption).HistorySavePath                                                                                                                       
+Get-PSReadLineKeyHandler                                                                                                                                     
+Get-PSReadLineOption     
+
+Get-History | Format-List -Property *Get-History | Format-List -Property *
+Get-History | Format-List -Property *
+
+$history = [System.Collections.ArrayList]([System.IO.File]::ReadAllLines((Get-PSReadlineOption).HistorySavePath))...                                         
+
+get-history | select -commandline                                                                                                                            
+get-history | select commandline    

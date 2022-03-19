@@ -1,0 +1,27 @@
+
+FilerAttFlytta | get-item | Copy-Item -Destination "G:\mhk\AttFlytta" -Recurse -Container
+FilerAttFlytta | get-item | Copy-Item -Destination 'G:\mhk\AttFlytta' -Recurse -Container
+FilerAttFlytta | get-item | Copy-Item -Destination 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta | get-item | Get-ChildItem -Path $_ | Copy-Item -Destination 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta | get-item | Copy-Item $_.FullName 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta | Copy-Item $_ 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta | get-item | $_.FullName
+FilerAttFlytta | get-item.FullName
+FilerAttFlytta | get-item | Copy-Item -literalPath 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta | Copy-Item -literalPath 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta | Copy-Item -Path 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta | Copy-Item $_ 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta |  Copy-Item $_ -destination 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta |get-item |  Copy-Item $_ -destination 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta |get-item.getfullname |  Copy-Item $_ -destination 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta |get-item |  Copy-Item $_.fullname -destination 'G:\mhk\AttFlytta\' -Recurse -Container
+FilerAttFlytta |get-item |  echo $_.fullname
+FilerAttFlytta |get-item |  echo $_
+FilerAttFlytta |get-item $sourceDir | Copy-Item -Destination $targetDir -Recurse -Container
+FilerAttFlytta | get-item | Copy-Item -Destination 'G:\mhk\AttFlytta' -Recurse -Container
+FilerAttFlytta | get-item | Copy-Item -Destination 'G:\mhk\AttFlytta' -Container
+FilerAttFlytta | get-item | Copy-Item -Destination (new-item -type directory -force (Split-Path -Path))
+FilerAttFlytta -pv pathString | get-item | Copy-Item -Destination (new-item -type directory -force (Split-Path $pathstring -Path))
+FilerAttFlytta -pv pathString | get-item | Copy-Item -Destination (new-item -type directory -force (Split-Path -path $pathstring))
+FilerAttFlytta -pv pathString | get-item | Copy-Item -Destination (new-item -type directory -force (Split-Path -path $pathString))
+FilerAttFlytta | get-item -pv pathString | Copy-Item -Destination (new-item -type directory -force (Split-Path -path $pathString))

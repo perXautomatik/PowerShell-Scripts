@@ -1,0 +1,31 @@
+$information = (import-csv .\information.csv).information
+$information = (import-csv .\1989-2010.csv).information
+(import-csv .\1989-2010.csv).information >>
+(import-csv .\1989-2010.csv).information | out-host
+write-host (import-csv .\1989-2010.csv).information
+write-host (import-csv .\1989-2010.csv).Information
+Out-host (import-csv .\1989-2010.csv).Information
+Out-host -inputObjekt (import-csv .\1989-2010.csv).Information
+(import-csv .\1989-2010.csv).Information | out-file -filepath c:\test1\process.txt
+(import-csv .\1989-2010.csv).Information | out-file -filepath C:\Users\crbk01\Desktop\anteckningar w3\test.txt
+(import-csv .\1989-2010.csv).Information | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+get-help import-scv
+get-help import-csv
+(import-csv .\1989-2010.csv -delimeter ; -encoding {unicode}) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -delimeter ";" -encoding {unicode}) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -delimeter <;> -encoding {unicode}) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -delimeter ';' -encoding {unicode}) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -encoding {unicode}) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -encoding unicode) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv ) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -delimiter ;) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -Delimiter ;) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -Delimiter ";") | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -Delimiter ";" -Encoding Unicode) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -Delimiter ";" -Encoding "Unicode") | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -Delimiter ";" -Encoding UTF7) | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+(import-csv .\1989-2010.csv -Delimiter ";" -Encoding UTF7).information | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"
+foreach((import-csv .\1989-2010.csv -Delimiter ";" -Encoding UTF7).information) "1"
+(import-csv .\1989-2010.csv -Delimiter ";" -Encoding UTF7).information | out-file -filepath "C:\Users\crbk01\Desktop\anteckningar w3\test.txt"$mbxs = Get-Mailbox

@@ -1,0 +1,9 @@
+
+
+.\xml2csv.ps1 -tag event_message -inputfile "C:\Users\crbk01\Desktop\Todo.xml" > "C:\Users\crbk01\Desktop\Todo2.csv"
+.\xmltocsv.ps1 
+. .\xmltocsv.ps1 
+Convert-WebArchitect "C:\Users\crbk01\Desktop\Todo.xml", "C:\Users\crbk01\Desktop\Todo2.csv"
+Convert-WebArchitect "C:\Users\crbk01\Desktop\Todo.xml" "C:\Users\crbk01\Desktop\Todo2.csv"
+git remote add Gist https://gist.github.com/3c9712ba4663e49cbe3961eb67791ea0
+git remote add Fujitsu https://github.com/perXautomatik/fujitsu-xml2csv

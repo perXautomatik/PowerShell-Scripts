@@ -1,0 +1,4 @@
+in2csv w3.xlsx > w32.csv
+in2csv vision.xlsx > vision2.csv
+in2csv NuÖppnaÄrenden.xlsx > vision2.csv
+in2csv NuÖppnaÄrende.xlsx > NuÖppnaÄrende2.csv
