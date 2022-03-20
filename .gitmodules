@@ -31,10 +31,6 @@
 [submodule "TodoProjects/Esp-Header-Export"]
 	path = TodoProjects/Esp-Header-Export
 	url = https://github.com/perXautomatik/Esp-Header-Export.git
-[submodule "WindowsAdmin"]
-	branch = WindowsAdmin
-	path = WindowsAdmin
-	url = https://github.com/perXautomatik/PowerShell-Scripts.git
 [submodule "filesystem/Compare-directory"]
 	path = filesystem/Compare-directory
 	url = https://gist.github.com/victorvogelpoel/6636754
