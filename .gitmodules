@@ -1,3 +1,6 @@
+[submodule "Fork"]
+	path = Fork
+	url = https://github.com/perXautomatik/fujitsu-xmlcsv
 [submodule "Processes/Get-ProcessTree"]
 	path = Processes/Get-ProcessTree
 	url = https://gist.github.com/atifaziz/9390344
@@ -80,9 +83,9 @@
 [submodule "git/GitCompare"]
 	path = git/GitCompare
 	url = https://github.com/perXautomatik/GitCompare.git
-[submodule "pshell"]
-	path = pshell
-	url = https://github.com/perXautomatik/PowerShell.git
 [submodule "ini/5960b271752d030383f0e5a591751e0d"]
 	path = ini/5960b271752d030383f0e5a591751e0d
 	url = https://gist.github.com/5960b271752d030383f0e5a591751e0d
+[submodule "pshell"]
+	path = pshell
+	url = https://github.com/perXautomatik/PowerShell.git
