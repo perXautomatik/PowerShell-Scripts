@@ -1,0 +1,15 @@
+D:\Documents\WindowsPowerShell\Scripts\Microsoft.PowerShellISE_profile.ps1
+D:\Documents\WindowsPowerShell\Scripts\TodoProjects\Microsoft.PowerShellISE_profile (2).ps1
+D:\OnGithub\powershell\forked-pshell\profile.ps1
+C:\Users\crbk01\Desktop\OnGithub\powershell\forked-pshell\profile.ps1
+C:\Users\Administratör\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
+C:\Windows\SysWOW64\WindowsPowerShell\v1.0\Examples\profile.ps1
+C:\Windows\System32\WindowsPowerShell\v1.0\Examples\profile.ps1
+C:\Windows\WinSxS\wow64_microsoft.windows.powershell.common_31bf3856ad364e35_10.0.19041.1_none_f125082deef76556\profile.ps1
+C:\Windows\WinSxS\amd64_microsoft.windows.powershell.common_31bf3856ad364e35_10.0.19041.1_none_e6d05ddbba96a35b\profile.ps1
+C:\Windows\WinSxS\amd64_microsoft-windows-appsdiagnostic_31bf3856ad364e35_10.0.19041.1_none_909aa2855af297d4\RS_TemporaryProfile.ps1
+C:\Windows\diagnostics\system\Apps\RS_TemporaryProfile.ps1
+C:\Windows\WinSxS\amd64_microsoft-windows-appsdiagnostic_31bf3856ad364e35_10.0.19041.1_none_909aa2855af297d4\RC_TemporaryProfile.ps1
+C:\Windows\diagnostics\system\Apps\RC_TemporaryProfile.ps1
+D:\Windows.old\WINDOWS\SysWOW64\WindowsPowerShell\v1.0\Examples\profile.ps1
+D:\Windows.old\WINDOWS\System32\WindowsPowerShell\v1.0\Examples\profile.ps1
