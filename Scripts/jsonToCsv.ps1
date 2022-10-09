@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿
 
 
@@ -39,4 +40,16 @@ $(
 
 ) *>&1 > output.txt
 Stop-Transcript
+=======
+﻿Function Get-Something {
+
+            [CmdletBinding()]
+
+            Param($item)
+        
+            ((Get-Content -Path $item | ConvertFrom-Json | select state).state | Convertfrom-Json).tabGroups |
+ % { $_.tabsmeta } | Export-Csv -Path $item + 'csv' -Delimiter ';' -NoTypeInformation
+
+}
+>>>>>>> 01073a2 (Merge commit '67d731c8236c3dd90115a8da33a9ff8961af8ad5' into Branch_d5eaf3c4)
 
