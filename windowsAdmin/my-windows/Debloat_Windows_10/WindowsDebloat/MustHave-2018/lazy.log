@@ -1,0 +1,8 @@
+﻿git : fatal: not a git repository: D:/Project Shelf/PowerShellProjectFolder/scripts/WindowsAdmin/WindowsDebloat/MustHav
+e-2018/../../../../.git/modules/Scripts/modules/WindowsAdmin/WindowsDebloat/MustHave-2018
+At C:\Users\crbk01\Documents\WindowsPowerShell\profile.ps1:67 char:70
++ ... le -FilePath .\lazy.log -inputObject (git lazy 'AutoCommit' 2>&1 )} ;
++                                           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (fatal: not a gi...t/MustHave-2018:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
