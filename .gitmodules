@@ -10,3 +10,6 @@
 [submodule "windowsAdmin/forked-sysadmin"]
 	path = windowsAdmin/forked-sysadmin
 	url = https://github.com/perXautomatik/PowerShell.git
+[submodule "windowsAdmin"]
+	path = windowsAdmin
+	url = https://github.com/perXautomatik/PowerShell-Scripts.git
