@@ -13,3 +13,6 @@
 [submodule "windowsAdmin"]
 	path = windowsAdmin
 	url = https://github.com/perXautomatik/PowerShell-Scripts.git
+[submodule "doneAndDeserted/Betesta/Esp-Header-Export"]
+	path = doneAndDeserted/Betesta/Esp-Header-Export
+	url = https://github.com/perXautomatik/Esp-Header-Export.git
