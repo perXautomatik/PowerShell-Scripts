@@ -1,0 +1,8 @@
+
+## hash ##
+$hashTable = @{}
+$Hashtable.GetEnumerator()
+$hashTable.x = $hashTable['x']
+
+Redirect
+2>&1
