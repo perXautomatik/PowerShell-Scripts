@@ -1,11 +1,6 @@
-#todo find original source, not created by me
-#?#by Lee @ http://webcache.googleusercontent.com/search?q=cache:stackoverflow.com/questions/1001776/how-can-i-split-a-text-file-using-powershell
-
-function splitFileLineByLine (
-    $infile, 
-    $parentPath,
-    $upperBound # calculated by Powershell
-)
+$infile = "E:\OneDrive\Dokument\Desktop\New folder (2)\Unknown\Diska.txt"
+$parentPath = Split-Path -parent $infile
+$upperBound = 50MB # calculated by Powershell
 
 if (test-path $infile)  #test to make sure the file exists
 {

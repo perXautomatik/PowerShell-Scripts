@@ -11,3 +11,6 @@
 	path = windowsAdmin
 	url = https://github.com/perXautomatik/PowerShell-Scripts.git
 
+[submodule "TodoProjects/GitHooks/cf3e17d36706bea6afbdc6d2c46811a4"]
+	path = TodoProjects/GitHooks/cf3e17d36706bea6afbdc6d2c46811a4
+	url = https://gist.github.com/pcrockett-pathway/cf3e17d36706bea6afbdc6d2c46811a4

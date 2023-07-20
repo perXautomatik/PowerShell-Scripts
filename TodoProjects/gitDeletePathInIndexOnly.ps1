@@ -2,6 +2,9 @@
 $asFile = ([System.IO.FileInfo]$errorus)
 $targetFolder = ($asFile | select Directory).Directory
 
+$targetFolder = "C:\Users\crbk01\Documents\WindowsPowerShell\Modules"
+
+
 $name = $targetFolder.Name
 
 #'D:\Project Shelf\PowerShellProjectFolder\scripts\Modules\Personal\migration\'
