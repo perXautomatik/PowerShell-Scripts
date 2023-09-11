@@ -1,16 +1,10 @@
-[submodule "PSReadline"]
-	path = PSReadline
-	url = https://github.com/perXautomatik/PowerShellCmdHist.git
-[submodule "doneAndDeserted/Betesta/Esp-Header-Export"]
-	path = doneAndDeserted/Betesta/Esp-Header-Export
-	url = https://github.com/perXautomatik/Esp-Header-Export.git
-[submodule "scripts"]
-	path = scripts
+[submodule "Modules"]
+	path = Modules
 	url = https://github.com/perXautomatik/PowerShell-Scripts.git
-[submodule "windowsAdmin"]
-	path = windowsAdmin
-	url = https://github.com/perXautomatik/PowerShell-Scripts.git
-
-[submodule "TodoProjects/GitHooks/cf3e17d36706bea6afbdc6d2c46811a4"]
-	path = TodoProjects/GitHooks/cf3e17d36706bea6afbdc6d2c46811a4
-	url = https://gist.github.com/pcrockett-pathway/cf3e17d36706bea6afbdc6d2c46811a4
+	branch = Modules
+[submodule "Snipps/EnvPath"]
+	path = Snipps/EnvPath
+	url = https://gist.github.com/2281de51f26338d8e273b0161785ed72
+[submodule "Snipps"]
+	path = Snipps
+	url = https://github.com/perXautomatik/Ps1-PowerShellModule.git
