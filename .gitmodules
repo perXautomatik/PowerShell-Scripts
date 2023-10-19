@@ -16,13 +16,13 @@ path = Optimize-PsReadLineHistory
 [submodule "ScoopBucket"]
 	path = ScoopBucket
 	url = https://github.com/perXautomatik/ScoopBucket
+[submodule "TakeOwnerShip"]
+	path = Scripts/TakeOwnerShip
+	url = https://gist.github.com/perXautomatik/ce36fd285e8cf8eb00cf3b17e0e8d79d
 
  [submodule "WindowsDebloat/MustHave-2018"]
 path = WindowsDebloat/MustHave-2018
  url = https://gist.github.com/c3fe34831f6c80a094a38960aa4e9446
-[submodule "TakeOwnerShip"]
-	path = Scripts/TakeOwnerShip
-	url = https://gist.github.com/perXautomatik/ce36fd285e8cf8eb00cf3b17e0e8d79d
 
  [submodule "WindowsDebloat/OptimizationScript"]
 path = WindowsDebloat/OptimizationScript
